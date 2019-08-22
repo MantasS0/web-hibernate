@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+    id 'war'
+}
+
+group 'lt.bit.java2'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    providedCompile group: 'javax.servlet', name: 'javax.servlet-api', version: '4.0.1'
+    compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.17'
+    compile group: 'org.hibernate', name: 'hibernate-core', version: '5.4.4.Final'
+    providedCompile group: 'org.hibernate', name: 'hibernate-jpamodelgen', version: '5.4.4.Final'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
